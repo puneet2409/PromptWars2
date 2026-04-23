@@ -6,7 +6,10 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: [],
+    setupFiles: ['./src/tests/setupTests.js'],
     css: false,
   },
+  esbuild: {
+    jsxInject: "import React from 'react'"
+  }
 })

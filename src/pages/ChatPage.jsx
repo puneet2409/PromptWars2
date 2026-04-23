@@ -41,6 +41,17 @@ export default function ChatPage({ selectedState, selectedConstituency, onConsti
     <div className="chat-layout">
       <div className="chat-main" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
         
+        {/* Header */}
+        <div className="chat-header" style={{ padding: 'var(--space-md) var(--space-lg)', borderBottom: '1px solid var(--border-subtle)', background: 'rgba(255,255,255,0.02)' }}>
+          <h2 style={{ margin: 0, fontSize: '1.25rem', background: 'linear-gradient(135deg, var(--primary), #fff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            AI Chat Assistant
+          </h2>
+          <p style={{ color: 'var(--text-secondary)', fontSize: '0.8125rem', margin: '4px 0 0 0' }}>
+            {t('chatEmptyDesc')}
+          </p>
+        </div>
+
+        
         {/* Top Stat Cards (from Mockup 3) */}
         {selectedConstituency && (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--space-md)', padding: 'var(--space-md)', background: 'var(--bg-main)', zIndex: 10, borderBottom: '1px solid var(--border-subtle)' }}>

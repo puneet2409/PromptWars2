@@ -9,7 +9,7 @@ import QuizPage from './pages/QuizPage';
 
 export default function App() {
   const [onboarded, setOnboarded] = useState(false);
-  const [activeTab, setActiveTab] = useState('chat');
+  const [activeTab, setActiveTab] = useState('map');
   const [selectedState, setSelectedState] = useState('');
   const [selectedConstituency, setSelectedConstituency] = useState(null);
 
